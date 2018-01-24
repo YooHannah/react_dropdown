@@ -4,12 +4,15 @@ import './App.css';
 import Dropdown from './Dropdown';
 
 const users = [
-  { name: 'Jerry', id: 21, gender: 'male' },
-  { name: 'Tomy', id: 22, gender: 'male' },
-  { name: 'Lily', id: 19, gender: 'female' },
-  { name: 'Lucy', id: 20, gender: 'female' }
+  { name: 'Jerry ', id: 21},
+  { name: 'Tomy ', id: 22},
+  { name: 'HANKS', id: 19},
+  { name: 'Lucy', id: 20}
 ]
 class App extends Component {
+  dropdownfunc(obj){
+    console.log(obj)
+  }
   render() {
     return (
       <div className="App">
@@ -18,9 +21,9 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          Dropdown EXERCISE.
         </p>
-         <Dropdown items={users}/>
+         <Dropdown items={users} changeFunc={this.dropdownfunc.bind(this)} />
       </div>
 
     );
