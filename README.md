@@ -5,10 +5,15 @@
 尝试使用redux处理数据传递去改进
 
 使用
+
 git clone https://github.com/YooHannah/react_dropdown.git //download
+
 npm install //安装包
+
 npm start //运行
 
 主要文件为Dropdown.css和Dropdown.js
+
 文件目录
+
 ![filpath](public/filepath.png)
